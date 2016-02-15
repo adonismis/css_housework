@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮動與兩側皆自適應的流體布局</title>
+</head>
+<style>
+	body{
+		font-size:14px;
+		background-color:#DDF3F7;
+		color:#333;
+	}
+	a{
+		color:#0082CB;
+		text-decoration:none;
+	}
+	p{
+		margin:0;
+	}
+	.mib_body{
+		width:600px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.mib_x{
+		margin-bottom: 10px;
+		background-color:#fff;
+	}
+	.mib_list{
+		padding:20px;
+	}
+	.mib_resize{
+		overflow:auto;
+		resize:both;
+	}
+	.mib_vip{
+		display:inline-block;
+		width:11px;
+		height:10px;
+		margin-left:1px;
+		background:url(data:image/gif);
+	}
+	.mib_head_a{
+		float:left;
+		margin-right:20px;
+	}
+	/*下面這個是固定布局寫法*/
+	.mib_cell{
+		display:table-cell;
+		*display:inline-block;
+		width:2000px;
+		*width:auto;
+	}
+	.mib_sms{
+		line-height: 22px;
+		padding-bottom:6px;
+		font-size:14px;
+	}
+	.mib_select{
+		width:80px;
+		padding:5px;
+		font-size:100%;
+	}
+</style>
+
+<body>
+<div id="mibBody" class="mib_body">
+	<div class="mib_x mib_resize">
+		<div class="mib_list">
+			<a href="#" class="mib_head_a">
+				<img src="http://a666.myweb.hinet.net/msn/xianglight/xl%20(2).gif" title="徐若瑄VIVIAN" id="mibHeadImg" width="100">
+			</a>
+		</div>
+		<div class="mib_cell">
+			<p class="mib_sms">
+				<a href="#" title="徐若瑄VIVIAN">徐若瑄VIVIAN<i title="新浪認證" class="mib_vip"></i></a>等一個人的晚餐!茶泡飯!飯、飯、飯...今日不減肥，先把病治好再說!我認真吃完這，燒就會退了吧?!開動啦~~~~~~
+			</p>
+			<div class="feed_img"><img src="http://www.tkgsh.tn.edu.tw/wpy/web_pic/little-pic/illust6.gif" height="120"></div>
+		</div>
+	</div> 	
+</div>
+	
+</body>
+</html>

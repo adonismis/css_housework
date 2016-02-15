@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮動與右側尺寸固定的流體布局</title>
+</head>
+<style>
+	body{
+		font-size:14px;
+		background-color:#DDF3F7;
+		color:#333;
+	}	
+	a{
+		color:#0082CB;
+		text-decoration:none;
+	}
+	p{
+		margin:0;
+	}
+	img{
+		border:0;
+	}
+	
+	.mib_body{
+		width:600px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.mib_x{
+		margin-bottom:10px;
+		background-color:#fff;
+	}
+	.mib_list{
+		padding:20px;
+		overflow:hidden;
+		_zoom:1;
+		resize:none;
+	}
+	.mib_resize{
+		overflow:auto;
+		resize:both;
+	}
+	
+	/*下面這個是右浮動，改變DOM位置的流體布局寫法*/
+	.mib_head_r{
+		width:56px;
+		float:right;
+	}
+	.mib_feed_flow{
+		margin-right:76px;
+	}
+	
+	/*下面這個是右浮動，改變DOM位置的流體佈局寫法*/
+	.mib_full_float{
+		width:100%;
+		float:left;
+	}
+	.mib_head_l{
+		width:56px;
+		float:left;
+		margin-left:-56px;
+	}
+
+	.mib_sms{
+		line-height:22px;
+		padding-bottom:6px;
+		font-size:14px;
+	}
+
+</style>
+<body>
+	<div id="mibBody" class="mib_body">
+		<div class="mib_x mib_resize">
+			<div class="mib_list">
+				<a href="#" class="mib_head_r">
+					<img src="http://a666.myweb.hinet.net/msn/xianglight/xl%20(2).gif" title="圖" width="76">
+				</a>
+				<div class="mib_feed_flow">
+					<p class="mib_sms">
+						<a href="#">徐若萱vivian <i class="mib_vip"></i>：一個人的晚餐!泡茶飯!飯、飯、飯...今日不減肥，先把病治好再說!我認真吃完這，燒就會退了吧?!開動啦~~~~~~~~~~~~~~~~</a>
+					</p>
+					<div class="feed_img">
+						<img src="http://www.tkgsh.tn.edu.tw/wpy/web_pic/little-pic/illust6.gif" width="76">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mib_x mib_resize">
+			<div class="mib_list">
+				<div class="mib_full_float">
+					<div class="mib_feed_flow">
+						<p class="mib_sms">
+							<a href="#">徐若萱vivian <i class="mib_vip"></i>：一個人的晚餐!泡茶飯!飯、飯、飯...今日不減肥，先把病治好再說!我認真吃完這，燒就會退了吧?!開動啦~~~~~~~~~~~~~~~~</a>
+						</p>
+						<div class="feed_img">
+							<img src="http://www.tkgsh.tn.edu.tw/wpy/web_pic/little-pic/illust6.gif" width="100">
+						</div>
+					</div>
+					<a href="#" class="mib_head_l">
+						<img src="http://a666.myweb.hinet.net/msn/xianglight/xl%20(2).gif" title="圖" width="56">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		
+
+
+	</div>
+</body>
+</html>
